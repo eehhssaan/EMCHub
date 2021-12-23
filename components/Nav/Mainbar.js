@@ -37,7 +37,11 @@ const Mainbar = ({ toggleDrawer, linksArray, isLoggedIn, children }) => {
     ]
   ) : (
     <Link as="/auth/login" href="/auth/login">
-      <MenuItem onClick={handleClose}>Login</MenuItem>
+      <MenuItem 
+        onClick={handleClose}
+        >
+          Login
+      </MenuItem>
     </Link>
   );
 
@@ -45,9 +49,8 @@ const Mainbar = ({ toggleDrawer, linksArray, isLoggedIn, children }) => {
     <>
       <AppBar position="fixed" sx={{ 
         minHeight: "7vh",
-        backgroundColor: "#bfc2c7",
+        backgroundColor: "#949494",
         color:'black',
-        // fontFamily: 'sans-serif'
          }}>
         <Toolbar
           text="rgba(0,0,0)"
@@ -61,7 +64,7 @@ const Mainbar = ({ toggleDrawer, linksArray, isLoggedIn, children }) => {
             onClick={toggleDrawer}
             sx={{ mr: 2 }}
           >
-            <MenuIcon />
+          
           </IconButton>
           <Link as="/" href="/" className="nav-list">
             <Typography
@@ -69,6 +72,9 @@ const Mainbar = ({ toggleDrawer, linksArray, isLoggedIn, children }) => {
               component="h1"
               sx={{ flexGrow: 1 }}
               className="nav-list"
+              style={{
+                fontWeight: 'bold'
+              }}
             >
               EMC HUB
             </Typography>
@@ -90,7 +96,10 @@ const Mainbar = ({ toggleDrawer, linksArray, isLoggedIn, children }) => {
             alt={
               <>
                 <AccountCircle />
-                <h2 className="h2-nav">Login</h2>
+                <h2 
+                  className="h2-nav">
+                    Profile
+                </h2>
               </>
             }
           >
@@ -101,11 +110,11 @@ const Mainbar = ({ toggleDrawer, linksArray, isLoggedIn, children }) => {
       <style jsx global>{`
         .nav-list {
           cursor: pointer;
+          font-width: 10px;
         }
 
         .h2-nav {
           margin-left: 10px;
-        }
       `}</style>
     </>
   );

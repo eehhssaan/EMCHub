@@ -11,7 +11,7 @@ export const NGOCard = ({
     <>
       <div className="card" style={{
         backgroundColor: "#bfc2c7",
-        maxWidth: '900px',
+        maxWidth: '80%',
         display: 'flex',
         flexWrap: "wrap",
         margin: "20px 0",

@@ -11,7 +11,6 @@ export const OffersBanner = ({ title, images = [] }) => {
         .container {
           height: fit-content;
           padding-bottom: 40px;
-          font-family: "Work sans", Sans-serif;
           font-weight: 700;
           text-align: center;
         }

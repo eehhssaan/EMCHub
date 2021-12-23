@@ -11,21 +11,20 @@ export const ServicesBanner = ({ title, images = [] }) => {
       <style jsx>{`
         .container {
           background-color: #bfc2c7;
-          color: 'black';
           height: fit-content;
-          padding-bottom: 40px;
-          font-family: "Work sans", Sans-serif;
           font-weight: 700;
           text-align: center;
+           margin: 0px auto;
+          padding: 5px;
         }
         .hr {
           background-color: white;
         }
         h2 {
           font-size: 36px;
+          color: 'black';
           text-align: center;
-          padding: 20px;
-          padding-top: 10vh;
+          padding: 1%;
         }
       `}</style>
     </>
@@ -52,23 +51,18 @@ const Icons = ({ images }) => {
           flex-wrap: wrap;
           flex-basis: 100%;
           justify-content: center;
-          gap: 10vw;
-          padding: 20px;
-        }
-        .container div {
-          max-width: min-content;
+          gap: 5vw;
         }
         h3 {
           font-size: 20px;
-          color: #ffffff;
           margin-top: 20px;
         }
       `}</style>
       <style jsx global>{`
         .icons {
-          width: 100px;
-          height: 100px;
-          border-radius: 50%;
+          width: 120px;
+          height: 120px;
+          border-radius: 20%;
         }
       `}</style>
     </>

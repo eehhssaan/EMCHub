@@ -13,11 +13,14 @@ export const Result = ({ locations, route }) => {
 
   return (
     <section 
-      className="locations-result-container">
+      className="locations-result-container" 
+      style={{ backgroundColor: '#ededed'}}
+      >
       {locations.map(({ id, ...location }, idx) => {
         return (
           <Fragment key={idx}>
             <Slug {...{ location, route }} handleHover={handleHover(idx)} />
+
             {locations.length - 1 !== idx && 
               <hr style= {{ 
                 border: "solid 2px black",

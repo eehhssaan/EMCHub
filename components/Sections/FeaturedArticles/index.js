@@ -10,8 +10,9 @@ export const FeaturedArticles = ({ topArticles }) => {
   return (
     <>
       <div className="container">
-        <h2>Featured Articles</h2>
         <div className="articles-container">
+        <h2>Featured Articles</h2>
+        <hr />
           {needsCarousel ? (
             <CarouselContainer
               hideOnMobile
@@ -39,7 +40,8 @@ export const FeaturedArticles = ({ topArticles }) => {
       <style jsx>{`
         h2 {
           text-align: center;
-          padding: 20px;
+          font-weight: 600;
+
           font-size: 36px;
           width: 100%;
         }
@@ -49,7 +51,8 @@ export const FeaturedArticles = ({ topArticles }) => {
           flex-wrap: wrap;
           gap: 40px;
           justify-content: center;
-          padding: 0 20px 120px 20px;
+          margin: 30px auto;
+          padding: 5px;
         }
         .articles-container {
           max-width: 1120px;

@@ -19,7 +19,7 @@ const LinkCategories = ({ isMainbar = false, children }) => {
   return (
     <>
       <ul className={isMainbar ? "desktop" : "mobile"}>
-        {/* {children} */}
+        {children}
         {navCategories}
       </ul>
       <style jsx>{`

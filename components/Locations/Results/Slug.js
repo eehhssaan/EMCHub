@@ -10,12 +10,17 @@ const Slug = ({
 }) => {
   return (
     <div className="locations-result-card" onMouseEnter={handleHover} {...props}>
-      <div>
+      <div  style={{
+          backgroundColor:'#c7c7c7',
+          borderRadius: '5px',
+          color: 'black',
+          padding: '5px'
+          }}>
         <Title {...{ name, route, slug }}>
-          <Chips {...{ categories }} />
+          <Chips {...{ categories }} style={{ fontSize:'100px'}}/>
         </Title>
-        <h3>
-          <b>{address}</b>
+        <h3 >
+          <b >{address}</b>
         </h3>
       </div>
       {description && <hr />}

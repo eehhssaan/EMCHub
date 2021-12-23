@@ -10,7 +10,7 @@ const Chips = ({ categories }) => {
         {categories.map((category, idx) => {
           return (
             <Fragment key={category.name}>
-              <span className="chip" onClick={() => alert(category.name)}>
+              <span className="chip" onClick={() => alert(category.name)} style={{color: 'black'}}>
                 {category.name}
               </span>
               {lastIndex !== idx && <span>•</span>}
