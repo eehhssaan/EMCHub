@@ -13,9 +13,9 @@ const Home = ({ hero, short_description, services, offers, topArticles }) => {
     <>
       <HeroBanner {...{ hero }} />
       <TitlePara {...short_description} />
-      <ServicesBanner {...services} />
-      <OffersBanner {...offers} />
+      {/* <OffersBanner {...offers} /> */}
       <FeaturedArticles {...{ topArticles }} />
+      <ServicesBanner {...services} />
       <Footer />
     </>
   );

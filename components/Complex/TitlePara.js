@@ -5,6 +5,7 @@ export const TitlePara = ({ title, paragraph }) => {
     <>
       <div className="container">
         <h2>{title}</h2>
+        <hr />
         <RichContent className="short-description">{paragraph}</RichContent>
       </div>
       <style jsx>{`
@@ -12,22 +13,22 @@ export const TitlePara = ({ title, paragraph }) => {
           text-align: center;
           max-width: 1024px;
           width: 90%;
-          margin: 60px auto;
+          margin: 30px auto;
           padding: 5px;
+          
         }
         h2 {
-          font-family: "Work sans", Sans-serif;
           font-size: 36px;
           font-weight: 600;
-					margin-bottom: 18px;
+          
         }
       `}</style>
       <style jsx global>{`
         .short-description {
           text-align: center;
-					font-size: 16px;
-          font-family: "Work sans", Sans-serif;
+					font-size: 20px;
 					line-height: 26px;
+          
         }
       `}</style>
     </>

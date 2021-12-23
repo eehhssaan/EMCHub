@@ -49,14 +49,18 @@ export const Filter = () => {
     <>
      <div style={{ 
       display: 'flex',
+      marginTop: '10px',
+      padding: '10px',
       justifyContent: 'center',
-      paddingTop: '10px',
+      backgroundColor: '#ededed',
+      borderRadius: '5px',
 
      }}>
-       <MuiAccordion className="filter-accordion" >
+       <MuiAccordion className="filter-accordion"  >
          <div style={{ 
            display: 'flex', 
            justifyContent: 'center',
+           backgroundColor: 'transparent'
 
            }} >
           <MuiAccordionSummary >

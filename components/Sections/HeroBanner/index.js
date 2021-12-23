@@ -30,7 +30,7 @@ export const HeroBanner = ({
           margin-bottom: 10px;
         }
         p {
-          color: #f5d75a;
+          color: #69a2e8;
           font-size: 25px;
           margin-bottom: 5vh;
           font-weight: 400;
@@ -38,7 +38,7 @@ export const HeroBanner = ({
       `}</style>
       <style jsx global>{`
         .yellow-blue {
-          background-color: #f5d75a;
+          background-color: #69a2e8;
           color: #1a4060;
           margin: auto;
         }

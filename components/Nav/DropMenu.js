@@ -19,7 +19,11 @@ export const DropMenu = ({ title, condition, alt, children }) => {
 
   return (
     <>
-      <IconButton
+    <div style={{
+      backgroundColor:'#5076a6',
+      borderRadius:'10px'
+    }}>
+    <IconButton
         size="large"
         aria-label="account of current user"
         aria-controls="menu-appbar"
@@ -51,6 +55,7 @@ export const DropMenu = ({ title, condition, alt, children }) => {
           margin-left: 10px;
         }
       `}</style>
+    </div>
     </>
   );
 };

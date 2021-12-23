@@ -5,6 +5,7 @@ export const ArticleCard = ({ title, description, content, slug, image }) => {
   const info = { url: slug };
   return (
     <>
+      <div>
       <div className="card">
         <Image className="article-card" image={image} />
         <section>
@@ -14,6 +15,7 @@ export const ArticleCard = ({ title, description, content, slug, image }) => {
             Read More &gt;
           </UrlButton>
         </section>
+      </div>
       </div>
       <style jsx>{`
         .card {
@@ -25,12 +27,13 @@ export const ArticleCard = ({ title, description, content, slug, image }) => {
           box-shadow: 0 5px 20px rgb(34 34 34 / 10%);
           height: auto;
           max-height: 520px;
-          font-family: "Work sans", Sans-serif;
           position: relative;
+  
         }
         section {
           height: 280px;
           padding: 35px 30px;
+
         }
         h3 {
           font-weight: 600;
@@ -55,6 +58,7 @@ export const ArticleCard = ({ title, description, content, slug, image }) => {
         .article-url {
           position: absolute;
           bottom: 10px;
+          width: 80%;
         }
       `}</style>
     </>

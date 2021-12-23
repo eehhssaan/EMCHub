@@ -37,10 +37,11 @@ export const Footer = () => {
 
       <style jsx>{`
         .container {
-          background-color: #bfc2c7;
+          background-color: #515251;
           padding: 50px;
           margin-bottom: 5vh;
           font-weight: 400;
+          color: white
         }
         .container-top,
         .container-bottom {
@@ -71,7 +72,6 @@ export const Footer = () => {
           margin-bottom: 25px;
         }
         .svg-inline--fa {
-          color: black;
           font-size: 20px;
         }
       `}</style>
@@ -89,6 +89,12 @@ const Logo = ({ url = "" }) => {
           max-width: 200px;
           max-height: 200px;
           display: block;
+        }
+
+        @media(max-width: 600px){
+          img{
+          display:none;
+          }
         }
       `}</style>
     </>
